@@ -50,6 +50,7 @@ $NewDistributionGroupParams = @{
     OrganizationalUnit  = $RoomGroupPath
     Alias               = $RoomGroupAlias
     ManagedBy           = $RoomGroupOwner
+    Verbose             = $true
 }
 
 New-DistributionGroup @NewDistributionGroupParams
