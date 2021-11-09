@@ -33,15 +33,6 @@ $EnableRemoteMailboxParams = @{
 #Enable the remote mailbox in exchange online
 Enable-RemoteMailbox @EnableRemoteMailboxParams
 
-$NewRoomGroupParams = @{
-    Name            = $RoomGroupName
-    DisplayName     = $RoomGroupName
-    GroupCategory   = "Security"
-    GroupScope      = "Universal"
-    SamAccountName  = $RoomGroupName
-    Verbose         = $true
-}
-New-ADGroup @NewRoomGroupParams
 
 $NewDistributionGroupParams = @{
     Name                = $RoomGroupName
